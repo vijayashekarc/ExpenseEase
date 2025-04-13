@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenseease - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><b>ExpenseEase</b></div>
+        <div class="nav-links">
+            </div>
+        </div>
+    </nav>
+
+    <div class="intro-container">
+        <h2>Welcome to Expenseease!</h2>
+        <p1>-----------------------------------------------------------</p1>
+        <br></br>
+        <p><b>Manage your expenses effortlessly and efficiently. Join us to keep track of your spending and save more.</b></p>
+        <br></br>
+        <p>Secure and simple, just for you.</p>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Sign in here!</h1>
+            <br>
+            <p><b>Track your expenses with ease.</b></p>
+            
+            <div class="login-options">
+                <div class="login-tabs">
+                    <button class="tab-btn active" id="emailTab">Email / Password</button>
+                    <button class="tab-btn" id="googleTab">Google</button>
+                </div>
+                
+                <div class="login-form" id="emailLoginForm">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <input type="email" id="loginEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginPassword" placeholder="Password" required>
+                        </div>
+                        <div class="form-error" id="loginError"></div>
+                        <button type="submit" class="login-btn email-login-btn">Sign In</button>
+                    </form>
+                    <div class="signup-link">
+                        Don't have an account? <a href="signup.html">Sign Up</a>
+                    </div>
+                </div>
+                
+                <div class="login-form" id="googleLoginForm" style="display: none;">
+                    <button id="googleLoginBtn" class="login-btn">
+                        <img src="https://www.google.com/favicon.ico" alt="Google" class="google-icon">
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
+

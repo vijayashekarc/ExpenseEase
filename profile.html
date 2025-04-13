@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenseease - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">ExpenseEase</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+            <div class="profile-icon active" onclick="window.location.href='profile.html'">
+                <img id="navProfilePic" src="profile.png" alt="Profile">
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img id="userAvatar" src="" alt="Profile Picture">
+            </div>
+            <h1 id="userName">Loading...</h1>
+            <p id="userEmail" class="user-email">Loading...</p>
+        </div>
+
+        <div class="profile-stats">
+            <div class="stat-card">
+                <h3>Total Expenses</h3>
+                <p id="totalExpenses">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Amount</h3>
+                <p id="totalAmount">₹0.00</p>
+            </div>
+            <div class="stat-card">
+                <h3>Account Created</h3>
+                <p id="accountCreated">Loading...</p>
+            </div>
+        </div>
+
+        <div class="profile-actions">
+            <a href="home.html" class="primary-btn">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html> 
